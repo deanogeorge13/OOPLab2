@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class WhileLoop {
     public static void main(String[] args) {
-        double exchange, amountInPounds, amountInEuro=0;
+        double exchange, amountInPounds, amountInEuro;
 
         Scanner input = new Scanner(System.in);
 
@@ -15,16 +15,16 @@ public class WhileLoop {
 
         amountInEuro = exchange*amountInPounds;
 
-        System.out.printf("%.2f",amountInPounds);
+        System.out.printf("%.2f",amountInEuro);
 
         while(amountInPounds!=0)
         {
-            System.out.printf("\nEnter a number to convert: ");
+            System.out.print("\nEnter a number to convert: ");
             amountInPounds = input.nextDouble();
 
             amountInEuro = exchange*amountInPounds;
 
-            System.out.printf("%.2f",amountInPounds);
+            System.out.printf("%.2f",amountInEuro);
         }
     }
 }
